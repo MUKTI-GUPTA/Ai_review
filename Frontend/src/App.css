@@ -56,3 +56,32 @@ main .right{
   font-size: 1.2rem;
   overflow: auto;
 }
+.spinner {
+  width: 30px;
+  height: 30px;
+  border: 4px solid rgba(0, 0, 0, 0.1);
+  border-left-color: #09f;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+  margin: 10px auto;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.review {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #09f;
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.review:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
